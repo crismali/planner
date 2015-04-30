@@ -16,6 +16,7 @@ defmodule Planner.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/howdy", HowdyController, :index
+    get "/howdy/:messenger", HowdyController, :show
 
     get "/", PageController, :index
   end
