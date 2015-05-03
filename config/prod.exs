@@ -8,6 +8,7 @@ use Mix.Config
 # meaningful, we use this information when generating URLs.
 config :planner, Planner.Endpoint,
   http: [port: {:system, "PORT"}],
+  cache_static_manifest: "priv/static/manifest.json",
   url: [host: "example.com"]
 
 # ## SSL Support
